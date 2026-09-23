@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.testng.eclipse.launchconfig">
+    <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="CubeCartAutomationFramework"/>
+    <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
+    <mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS">
+        <mapEntry key="base.BasePage" value="click;selectByVisibleText;type;getValue;isDisplayed;check;getText;sleepBriefly;BasePage;isPresent"/>
+        <mapEntry key="base.BaseTest" value="openAdminUrl;openStoreUrl;tearDown;setUp"/>
+        <mapEntry key="base.DriverFactory" value="quitDriver;initDriver;getDriver"/>
+        <mapEntry key="config.ConfigReader" value="getExplicitWait;getAdminUrl;getAdminUsername;getUrl;getAdminPassword;getImplicitWait;getOrDefault"/>
+        <mapEntry key="hooks.Hooks" value="setUp;tearDown"/>
+        <mapEntry key="listeners.ExtentManager" value="getInstance;createReportDirectoryIfMissing"/>
+        <mapEntry key="listeners.ExtentTestListener" value="onTestFailure;onTestSkipped;onFinish;onTestStart;attachScreenshotIfAvailable;onTestSuccess"/>
+        <mapEntry key="pages.AddProductPage" value="clickSave;enterSeoMetaDescription;enterSeoUrlPath;clickSaveAndReload;AddProductPage;openSeoTab;getProductNameValue;fillGeneralInformation;enterCostPrice;openPricingTab;enterStockLevel;selectCondition;enterProductCode;enterSeoMetaTitle;selectFirstCategory;selectManufacturer;enterProductHeight;enterSalePrice;setCkEditorContent;enterProductWidth;openProductsListPage;openDescriptionTab;addProductWithFullDetails;enterProductName;selectDimensionUnit;enterRetailPrice;enterStockWarningLevel;clickAddProductButton;getCurrentUrl;enterProductDepth;openCategoriesTab;isProductNameValidationErrorDisplayed;isAddProductPageDisplayed;isProductSavedSuccessfully;navigateToAddProductPage;enterShortDescription;enterProductWeight;openGeneralTab;enterDescription"/>
+        <mapEntry key="pages.AdminLoginPage" value="getUsernameFieldValue;clickLogout;enterPassword;login;isLoginPageDisplayed;enterUsername;getPasswordFieldType;clickLogin;isForgotPasswordLinkDisplayed;isDashboardDisplayed;isErrorMessageDisplayed;AdminLoginPage"/>
+        <mapEntry key="pages.InventoryPage" value="isPaginationDisplayed;isAddProductLinkDisplayed;openPage;isProductsTableDisplayed;InventoryPage;isAddCategoryLinkDisplayed;getBreadcrumbText;getPageTitle;clickDashboardBreadcrumbLink;isHeadingDisplayed;getHeadingText;isBreadcrumbDisplayed"/>
+        <mapEntry key="pages.LoginPage" value="isLoginPageDisplayed;enterEmail;isLoginSuccessful;isErrorMessageDisplayed;LoginPage;getCurrentUrl;clickLogin;checkRememberMe;login;enterPassword"/>
+        <mapEntry key="pages.RegisterPage" value="clickRegister;getFirstNameValue;enterFirstName;checkSubscribeToNewsletter;fillRegistrationForm;isValidationErrorDisplayed;isRegisterPageDisplayed;enterEmail;fillRegistrationForm;getEmailValue;checkAgreeToTerms;isFieldErrorDisplayed;fillRegistrationForm;enterPassword;isRegistrationSuccessful;enterMobile;enterPhone;enterTitle;getCurrentUrl;RegisterPage;enterLastName;enterConfirmPassword"/>
+        <mapEntry key="stepdefinitions.AddProductSteps" value="the_admin_clicks_the_save_button;the_product_should_be_saved_successfully;the_admin_clicks_the_save_button_without_entering_a_product_name;the_admin_is_logged_in_to_the_admin_panel;the_admin_is_on_the_add_product_page;the_admin_fills_the_product_details_with_a_valid_product_name;the_product_should_not_be_saved"/>
+        <mapEntry key="stepdefinitions.AdminLoginSteps" value="the_admin_logs_in_with_valid_credentials;the_admin_opens_the_admin_url;the_admin_dashboard_should_be_displayed"/>
+        <mapEntry key="stepdefinitions.LoginSteps" value="the_user_logs_in_with_email_and_password;the_user_is_on_the_login_page;an_error_message_should_be_displayed"/>
+        <mapEntry key="stepdefinitions.RegisterSteps" value="the_user_fills_the_registration_form_with_all_valid_details;the_user_clicks_the_register_button;the_user_is_on_the_register_page;the_registration_should_be_successful_and_browser_closed"/>
+        <mapEntry key="suite.CubeCartSuite" value="main"/>
+        <mapEntry key="tests.AddProductTest" value="loginAsAdminAndOpenAddProduct;manufacturerOptions;testAddProductWithValidDetails;testAddProductGeneralFieldScenarios;testAddProductWithValidStockLevel;testAddProductWithoutProductName;testAddProductWithDescriptionAndShortDescription;testAddProductWithNegativePriceShouldBeRejected;testSaveAndReloadKeepsAdminOnTheSameProduct;testAddProductPageLoads;testAddProductWithCategoryAssigned;testAddProductWithEachDimensionUnit;testAddProductWithEachManufacturer;conditionOptions;testAddProductWithValidPricing;testDuplicateProductCodeShouldBeRejected;dimensionUnitOptions;validPricingScenarios;testAddProductWithSeoFields;testAddProductWithNegativeStockLevelShouldBeRejected;validStockScenarios;generalFieldScenarios;testAddProductWithEachCondition"/>
+        <mapEntry key="tests.AdminLoginTest" value="testAdminLoginValid;testUnauthorizedAccessWithoutEverLoggingIn;testMultipleFailedLoginAttemptsDoNotBreakThePage;testUnauthorizedAccessAfterLogout;testAdminLoginInvalid;testAdminLoginPageLoads;testSessionPersistsAfterBrowserRefresh;openAdminLoginPage;testAdminLoginWithInvalidCombinations;testAdminUsernameIsCaseInsensitive;invalidAdminLoginData;testForgotPasswordLinkIsPresent;testUsernameFieldIsEmptyOnPageLoad;testAdminLogout;testPasswordFieldMasksInput"/>
+        <mapEntry key="tests.InventoryTest" value="loginAsAdmin;testProductsPageShowsAProductsTable;testProductsPageHasPagination;testAdminPageTitleIsConsistent;testCategoriesPageLoads;testInventorySectionLoads;testAddCategoryButtonIsPresentOnCategoriesPage;testProductsPageLoads;testAddProductButtonIsPresentOnProductsPage;testBreadcrumbTextOnCategoriesPage;testBreadcrumbDashboardLinkNavigatesHome;inventorySections"/>
+        <mapEntry key="tests.LoginTest" value="testLoginWithInvalidCredentials;testLoginPageLoads"/>
+        <mapEntry key="tests.RegisterTest" value="testRegistrationWithInvalidEmailFormat;testRegisterWithEmptyRequiredFields;testRegisterPageLoads;testRegistrationWithEmptyEmail;testLoggedInUserIsRedirectedAwayFromRegisterPage;openRegisterPage;testRegisterWithNewsletterSubscriptionUnchecked;registrationData;testRegisterWithNewsletterSubscriptionChecked;uniqueEmail;testDuplicateEmailWithSamePasswordLogsIntoExistingAccount;testRegistrationScenarios;invalidEmailFormats;testFirstNameIsTruncatedAtMaxLength;testRegisterWithValidDetails;testEmailIsTruncatedAtMaxLength;testDuplicateEmailWithDifferentPasswordShowsMisleadingError"/>
+        <mapEntry key="utils.ScreenshotUtils" value="takeScreenshot"/>
+        <mapEntry key="utils.WaitUtils" value="waitForVisibility;waitForClickability;WaitUtils"/>
+    </mapAttribute>
+    <listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
+        <listEntry value="tests.LoginTest"/>
+        <listEntry value="pages.RegisterPage"/>
+        <listEntry value="stepdefinitions.LoginSteps"/>
+        <listEntry value="suite.CubeCartSuite"/>
+        <listEntry value="stepdefinitions.AdminLoginSteps"/>
+        <listEntry value="pages.InventoryPage"/>
+        <listEntry value="listeners.ExtentManager"/>
+        <listEntry value="base.BaseTest"/>
+        <listEntry value="config.ConfigReader"/>
+        <listEntry value="tests.RegisterTest"/>
+        <listEntry value="tests.AdminLoginTest"/>
+        <listEntry value="utils.WaitUtils"/>
+        <listEntry value="base.DriverFactory"/>
+        <listEntry value="tests.InventoryTest"/>
+        <listEntry value="pages.AdminLoginPage"/>
+        <listEntry value="tests.AddProductTest"/>
+        <listEntry value="base.BasePage"/>
+        <listEntry value="listeners.ExtentTestListener"/>
+        <listEntry value="runner.TestRunner"/>
+        <listEntry value="pages.AddProductPage"/>
+        <listEntry value="stepdefinitions.RegisterSteps"/>
+        <listEntry value="hooks.Hooks"/>
+        <listEntry value="pages.LoginPage"/>
+        <listEntry value="utils.ScreenshotUtils"/>
+        <listEntry value="stepdefinitions.AddProductSteps"/>
+    </listAttribute>
+    <listAttribute key="org.testng.eclipse.METHOD_TEST_LIST"/>
+    <listAttribute key="org.testng.eclipse.PACKAGE_TEST_LIST"/>
+    <stringAttribute key="org.testng.eclipse.PRE_DEFINED_LISTENERS" value=""/>
+    <intAttribute key="org.testng.eclipse.TYPE" value="1"/>
+</launchConfiguration>
